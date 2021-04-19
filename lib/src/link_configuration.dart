@@ -11,13 +11,15 @@ abstract class LinkConfiguration {
 /// to Link via the link_token. (https://plaid.com/docs/link/link-token-migration-guide)
 class LinkTokenConfiguration implements LinkConfiguration {
   final String token;
+  final String oauthStateId;
 
-  LinkTokenConfiguration({required this.token});
+  LinkTokenConfiguration({required this.token, this.oauthStateId});
 
   /// Returns a representation of this object as a JSON object.
   Map<String, dynamic> toJson() {
     return <String, dynamic>{
       'token': token,
+      'oauth_state_id': oauthStateId
     };
   }
 }
