@@ -11,7 +11,7 @@ abstract class LinkConfiguration {
 /// to Link via the link_token. (https://plaid.com/docs/link/link-token-migration-guide)
 class LinkTokenConfiguration implements LinkConfiguration {
   final String token;
-  final String oauthStateId;
+  final String? oauthStateId;
 
   LinkTokenConfiguration({required this.token, this.oauthStateId});
 
