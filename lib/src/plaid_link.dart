@@ -107,7 +107,7 @@ class PlaidLink {
   
   // Closes Plaid Link View
   Future<void> continueWithUri({String? redirectUri}) async {
-    await _channel.invokeMethod('continueFromRedirectUri', redirectUri);
+    await _channel.invokeMethod('continueFromRedirectUri', {"redirectUri" : redirectUri});
   }
   
   
