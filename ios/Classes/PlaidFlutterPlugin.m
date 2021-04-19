@@ -163,6 +163,7 @@ static NSString* const kOAuthStateIdKey = @"oauthStateId";
     NSURL *receivedRedirectUri = (id)redirectUriString == [NSNull null] ? nil : [NSURL URLWithString:redirectUriString];
 
     if (receivedRedirectUri && _linkHandler) {
+       NSLog(@"Made it here");
        [_linkHandler continueFromRedirectUri:receivedRedirectUri];
     }
 }
