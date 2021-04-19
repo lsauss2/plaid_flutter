@@ -35,7 +35,7 @@ static NSString* const kEventKey = @"event";
 
 //static NSString* const kSelectAccountKey = @"selectAccount";
 //static NSString* const kLongtailAuthKey = @"longtailAuth";
-//static NSString* const kOAuthStateIdKey = @"oauthStateId";
+static NSString* const kOAuthStateIdKey = @"oauthStateId";
 
 @implementation PlaidFlutterPlugin {
     UIViewController *_rootViewController;
